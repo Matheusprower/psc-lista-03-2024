@@ -1,0 +1,20 @@
+programa {
+  real n1,n2,n3
+  funcao inicio() {
+    escreva ("Escreva o primeiro número\n")
+    leia (n1)
+    escreva ("\nEscreva o segundo número\n")
+    leia (n2)
+    escreva ("\nEscreva o terceiro número\n")
+    leia (n3)
+    escreva ("\n")
+
+    se (n1 > n2) se (n2 > n3) escreva ("Maior Número ", n1, "\nMenor Número ", n3)
+    se (n1 > n3) se (n3 > n2) escreva ("Maior Número ", n1, "\nMenor Número ", n2)
+    se (n2 > n1) se (n1 > n3) escreva ("Maior Número ", n2, "\nMenor Número ", n3)
+    se (n2 > n3) se (n3 > n1) escreva ("Maior Número ", n2, "\nMenor Número ", n1)
+    se (n3 > n1) se (n1 > n2) escreva ("Maior Número ", n3, "\nMenor Número ", n2)
+    se (n3 > n2) se (n2 > n1) escreva ("Maior Número ", n3, "\nMenor Número ", n1)
+    
+  }
+}
